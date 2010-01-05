@@ -23,7 +23,7 @@ THE SOFTWARE.
 var ProScroll = (function(){
     var ProScroll = Class.create();
     
-    ProScroll.Version = '0.0.1';
+    ProScroll.Version = '0.0.2';
     
     ProScroll.keyPress = function(event){
     	if( event.keyCode === 18 && event.type === 'keydown' ) ProScroll.horiKey = true;
@@ -47,6 +47,7 @@ var ProScroll = (function(){
             this.container = $(container)
             .setStyle({overflow: 'hidden'})
             .observe('mouse:wheel', function(ev){
+            	ev.stop();
             	var slider = ProScroll.horiKey ? this.sliders.horizontal : this.sliders.vertical;            	
             	if(ev.memo.delta < 0) slider.setValue(slider.value + .1 );
             	else slider.setValue(slider.value - .1);
