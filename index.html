@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ProScroll</title>
+<script src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load('prototype', '1.6');
+google.load('scriptaculous', '1.8');
+</script>
+<script src="proscroll.js"></script>
+<script>
+var scroller;
+google.setOnLoadCallback(function(){
+    scroller = new ProScroll('scrollMe'); 
+});
+</script>
+
+<style type="text/css">
+#scrollMe {
+	height: 300px;
+	width: 200px;
+	border: 1px solid black;
+	overflow: auto;
+	position: relative;
+}
+
+#content {
+	position: absolute;
+	top: 0;
+	left: 0;
+    padding: 1em;
+}
+#content p {
+    width: 250px;
+}
+
+div.horizontal_scrollbar {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    hieght: 5px;
+    width: 196px;
+    background-color: gray;
+}
+
+div.horizontal_scrollbar_handle {
+    background-color: red;
+    height: 5px;
+    width: 10px;
+}
+div.vertical_scrollbar {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 5px;
+    height: 290px;
+    background-color: gray;
+}
+
+div.vertical_scrollbar_handle {
+    background-color: red;
+    width: 5px;
+    height: 10px;
+}
+</style>
+</head>
+<body>
+
+<div id="scrollMe">
+
+	<div id="content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+		dui leo, facilisis sit amet aliquam quis, ornare eu elit. Donec rhoncus
+		ante et mauris condimentum lacinia. Maecenas luctus bibendum ante,
+		placerat tristique nibh mollis non. Etiam ut urna risus, quis vestibulum
+		purus. Integer dignissim dignissim sollicitudin. Aliquam erat volutpat.
+		Quisque consequat felis commodo mauris aliquet mattis. Curabitur non
+		massa porttitor nisl interdum suscipit. Pellentesque ultricies bibendum
+		libero. Nunc et lorem lectus. Etiam auctor tempus diam id vestibulum.
+		Nunc sodales rutrum turpis, nec ornare magna condimentum ac. Ut
+		interdum, purus vitae facilisis porta, metus nisi fringilla libero, sit
+		amet volutpat ligula risus a turpis. Nunc eget laoreet tellus.
+		Pellentesque nec nisi quis neque molestie adipiscing nec et felis. Nulla
+		egestas orci ut felis bibendum tristique. Vestibulum quis libero eu
+		massa tincidunt vestibulum sed feugiat tortor. Duis quis magna sem.
+		Aliquam non massa felis, eget fermentum dui. Mauris porttitor, metus eu
+		laoreet dignissim, mi elit porttitor ligula, sed eleifend augue lectus
+		ullamcorper mi. Ut quis dapibus ante. Maecenas volutpat fringilla
+		tincidunt. Vestibulum velit mi, aliquam a cursus a, porttitor quis
+		lorem. Morbi ut sem eu neque fermentum pellentesque sit amet
+		sollicitudin metus. Phasellus lobortis ligula at justo eleifend dictum.
+		Mauris viverra molestie magna, vel lobortis mi porttitor in. Vivamus
+		quam lectus, iaculis bibendum condimentum ut, gravida eget est. Donec
+		fermentum justo et arcu mollis luctus. Suspendisse potenti. Cum sociis
+		natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+		mus. Proin lobortis nibh tempor lacus commodo et vestibulum tellus
+		sodales. Etiam condimentum suscipit suscipit. Curabitur tincidunt
+		condimentum urna, vel vestibulum dui gravida id. Lorem ipsum dolor sit
+		amet, consectetur adipiscing elit. Donec nisi enim, ultricies non
+		hendrerit in, tempor eleifend nunc. In hac habitasse platea dictumst.
+		Duis sed ante lacus. Vestibulum sed lectus ullamcorper odio varius
+		convallis. Duis et turpis nec enim aliquam rutrum in eu massa. Mauris et
+		euismod lacus. Sed lacinia auctor tincidunt. In consequat, orci et
+		pulvinar blandit, orci felis venenatis arcu, ac vulputate lacus ligula
+		eu sem. Fusce orci enim, aliquam in sodales ornare, sodales id nisi.
+		Pellentesque vel purus in eros blandit ultricies. Vivamus non libero
+		tortor. Proin eget ligula sit amet mi tincidunt faucibus. Vestibulum
+		ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+		Curae; Sed in libero ut erat porttitor vulputate. Ut viverra dictum
+		elit, in rhoncus quam venenatis ac. Aliquam feugiat hendrerit mauris sed
+		dapibus. In hac habitasse platea dictumst. Vestibulum ut odio neque, a
+		scelerisque mi. Nulla faucibus eros quis odio mattis a consectetur
+		libero consectetur. Aenean nec nulla accumsan justo ultrices commodo.
+		Aenean bibendum gravida turpis ac tristique. Nulla facilisis placerat
+		imperdiet. Vestibulum elementum, tellus consectetur porta aliquam, nunc
+		nulla tempus neque, nec dapibus odio orci quis nunc. Duis libero turpis,
+		ultricies vel convallis ac, dignissim adipiscing sapien. In tincidunt
+		suscipit fermentum. Donec id eros enim. Fusce ac eros mi, id rutrum
+		nisl. Phasellus non mauris in ante dictum pretium eget vitae leo.
+		Vivamus pulvinar lacus eu turpis hendrerit posuere. Nullam egestas arcu
+		et nisi placerat et accumsan tortor rhoncus. Pellentesque vel lorem eu
+		orci condimentum luctus. Curabitur imperdiet libero sed magna aliquet in
+		lacinia augue sollicitudin. Class aptent taciti sociosqu ad litora
+		torquent per conubia nostra, per inceptos himenaeos. Ut ligula magna,
+		consectetur et egestas a, luctus in risus. Suspendisse tellus odio,
+		dictum et commodo ut, facilisis sit amet urna.</p>
+</div>
+
+</div>
+
+
+</body>
+</html>
