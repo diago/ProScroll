@@ -1,0 +1,26 @@
+h1. ProScroll
+
+h2. Description
+
+Adds js horizontal and vertical scrolling to an overflow: auto container. Turns the auto to hidden and inserts the needed track and handles for Scriptaculous Control.Sliders.
+
+h2. Usage
+
+<pre><code class="javascript">
+var scroller = new ProScroll('scrollMe', {
+  axis: 'horizontal'
+}); 
+</code></pre>
+
+h2. Options
+
+|_. Option |_. Default |_. Description |
+| axis | 'both' | can be 'vertical', 'horizontal' or 'both'. Sets the appropriate scrollbar(s) |
+| trackClassName | 'scrollbar' | Class name added to the bar div |
+| handleClassName | 'scrollbar_handle' | Class name added tp the handle div |
+
+For both classNames above they will be prefixed with either 'vertical_' or 'horizontal_'.
+
+h3. Credits
+
+Thanks to "LivePipe":http://livepipe.net for creating great Prototype extensions. ProScroll is using the mouse:wheel event provided from Live Pipe which is licensed under "MIT":http://www.opensource.org/licenses/mit-license.php .  
