@@ -12,6 +12,71 @@ var scroller = new ProScroll('scrollMe', {
 }); 
 </code></pre>
 
+Example HTML:
+
+<pre><code class="html">
+<div id="scrollMe">
+
+    <div id="content">
+        <p>Some Crazy Amount of stuff</p>
+    </div>
+
+</div>
+</code></pre>
+
+Example CSS:
+
+<pre><code class="css">
+<style type="text/css">
+#scrollMe {
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    overflow: auto;
+    position: relative;
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+}
+#content p {
+    width: 250px;
+}
+
+div.horizontal_scrollbar {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    hieght: 5px;
+    width: 196px;
+    background-color: gray;
+}
+
+div.horizontal_scrollbar_handle {
+    background-color: red;
+    height: 5px;
+    width: 10px;
+}
+div.vertical_scrollbar {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 5px;
+    height: 290px;
+    background-color: gray;
+}
+
+div.vertical_scrollbar_handle {
+    background-color: red;
+    width: 5px;
+    height: 10px;
+}
+</style>
+</code></pre>
+
 h2. Options
 
 |_. Option |_. Default |_. Description |
